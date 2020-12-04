@@ -31,11 +31,11 @@ class Data {
                 val rs = stmt.executeQuery("select * from emp")
                 while(rs.next()){
                     //TO DO - pegar as propriedades do usuário aqui e pá
-
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
             }
         }
+        return list
     }
 }
