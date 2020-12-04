@@ -1,5 +1,6 @@
 package utils;
 
+import java.io.File;
 import java.util.Properties;
 import javax.mail.Message;
 import javax.mail.Session;
@@ -11,6 +12,8 @@ import javax.mail.PasswordAuthentication;
 
 
 //clase que retorna uma autenticacao para ser enviada e verificada pelo servidor smtp
+
+
 public class SendMail {
 
     private String mailSMTPServer;
@@ -77,7 +80,7 @@ public class SendMail {
             //Setando o assunto
             msg.setSubject(subject);
             //Setando o conteúdo/corpo do email
-            msg.setContent("<h1>This is actual message embedded in HTML tags</h1>","text/html");
+            msg.setContent(message,"text/html");
 
         } catch (Exception e) {
             System.out.println(">> Erro: Completar Mensagem");

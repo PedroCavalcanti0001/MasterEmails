@@ -8,6 +8,8 @@ plugins {
     application
 }
 
+
+
 group = "me.pedro"
 version = "1.0-SNAPSHOT"
 
@@ -16,6 +18,8 @@ repositories {
 }
 
 dependencies {
+   implementation("commons-io:commons-io:2.8.0")
+    implementation("com.google.code.gson:gson:2.7")
     implementation("org.simplejavamail:simple-java-mail:6.4.4")
     testImplementation(kotlin("test-junit"))
 }
