@@ -4,7 +4,7 @@
     "port": "465",
     "protocol": "smtp",
     "starttls": "true",
-    "email": "emaildeteste@gmail.com",
-    "password": "PEdro2014"
+    "email": "",
+    "password": ""
   }
 }

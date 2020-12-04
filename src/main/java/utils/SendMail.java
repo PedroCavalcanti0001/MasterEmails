@@ -2,6 +2,7 @@ package utils;
 
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.CompletableFuture;
 import javax.mail.Message;
 import javax.mail.Session;
 import javax.mail.Transport;
@@ -30,12 +31,13 @@ public class SendMail {
         this.starttls = starttls;
     }
 
-    public void send(String to, String subject, String message, SimpleAuth simpleAuth) {
+    public CompletableFuture<String> send(String to, String subject, String message, SimpleAuth simpleAuth) {
+        CompletableFuture<String> future = new CompletableFuture<> ();
+        
         Properties props = getProperties(simpleAuth.username);
+        
         Session session = Session.getDefaultInstance(props, simpleAuth);
-        session.setDebug(true);
-
-
+        session.setDebug(false);
         //Objeto que contém a mensagem
         Message msg = new MimeMessage(session);
 
@@ -64,7 +66,7 @@ public class SendMail {
              *  3 - sua senha do gmail
              */
             tr.connect(mailSMTPServer, simpleAuth.username, simpleAuth.password);
-            msg.saveChanges(); // don't forget this
+            msg.saveChanges();
             //envio da mensagem
             tr.sendMessage(msg, msg.getAllRecipients());
             tr.close();
@@ -72,6 +74,8 @@ public class SendMail {
             System.out.println(">> Erro: Envio Mensagem");
             e.printStackTrace();
         }
+        future.complete(simpleAuth.username);
+        return future;
     }
 
     private Properties getProperties(String from) {
