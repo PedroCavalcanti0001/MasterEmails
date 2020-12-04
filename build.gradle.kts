@@ -1,7 +1,6 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 
-
 plugins {
     id("com.github.johnrengelman.shadow") version "5.2.0"
     kotlin("jvm") version "1.4.20"
@@ -18,7 +17,7 @@ repositories {
 }
 
 dependencies {
-   implementation("commons-io:commons-io:2.8.0")
+    implementation("commons-io:commons-io:2.8.0")
     implementation("com.google.code.gson:gson:2.7")
     implementation("org.simplejavamail:simple-java-mail:6.4.4")
     testImplementation(kotlin("test-junit"))
