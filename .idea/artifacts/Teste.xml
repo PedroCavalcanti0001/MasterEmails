@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Teste">
+    <output-path>$PROJECT_DIR$/out/artifacts/Teste</output-path>
+    <root id="archive" name="Teste.jar">
+      <element id="library" level="project" name="Gradle: com.github.bbottema:emailaddress-rfc2822:2.2.0" />
+      <element id="library" level="project" name="Gradle: com.github.bbottema:jetbrains-runtime-annotations:1.0.0" />
+      <element id="library" level="project" name="Gradle: com.sun.activation:jakarta.activation:1.2.1" />
+      <element id="library" level="project" name="Gradle: com.sun.mail:jakarta.mail:1.6.5" />
+      <element id="library" level="project" name="Gradle: jakarta.activation:jakarta.activation-api:1.2.1" />
+      <element id="library" level="project" name="Gradle: jakarta.annotation:jakarta.annotation-api:1.3.5" />
+      <element id="library" level="project" name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:2.3.2" />
+      <element id="library" level="project" name="Gradle: junit:junit:4.12" />
+      <element id="library" level="project" name="Gradle: org.hamcrest:hamcrest-core:1.3" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-common:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-stdlib:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-test-annotations-common:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-test-common:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-test-junit:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains.kotlin:kotlin-test:1.4.20" />
+      <element id="library" level="project" name="Gradle: org.jetbrains:annotations:13.0" />
+      <element id="library" level="project" name="Gradle: org.simplejavamail:core-module:6.4.4" />
+      <element id="library" level="project" name="Gradle: org.simplejavamail:simple-java-mail:6.4.4" />
+      <element id="library" level="project" name="Gradle: org.slf4j:slf4j-api:1.7.25" />
+      <element id="module-output" name="MasterEmails.main" />
+    </root>
+  </artifact>
+</component>
