@@ -3,7 +3,7 @@ package utils;
 import javax.mail.Authenticator;
 import javax.mail.PasswordAuthentication;
 
-class SimpleAuth extends Authenticator {
+public class SimpleAuth extends Authenticator {
     public String username = null;
     public String password = null;
 
