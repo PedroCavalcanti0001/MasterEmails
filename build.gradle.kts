@@ -13,10 +13,18 @@ group = "me.pedro"
 version = "1.0-SNAPSHOT"
 
 repositories {
+    flatDir {
+        dirs("libs")
+    }
+    maven("https://dl.bintray.com/kotlin/exposed/")
     mavenCentral()
 }
 
 dependencies {
+    implementation("com.oracle.ojdbc:ojdbc8:19.3.0.0")
+    implementation("org.jetbrains.exposed:exposed-core:0.25.1")
+    implementation("org.jetbrains.exposed:exposed-dao:0.25.1")
+    implementation("org.jetbrains.exposed:exposed-jdbc:0.25.1")
     implementation("commons-io:commons-io:2.8.0")
     implementation("com.google.code.gson:gson:2.7")
     implementation("org.simplejavamail:simple-java-mail:6.4.4")

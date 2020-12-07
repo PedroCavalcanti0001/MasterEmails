@@ -6,5 +6,15 @@
     "starttls": "true",
     "email": "",
     "password": ""
+  },
+  "database": {
+    "host": "127.0.0.1",
+    "port": "1521",
+    "user": "SYSTEM",
+    "password": "123",
+    "sid": "xe"
+  },
+  "otherSettings": {
+    "daysLeftToSendEmail": [3, 2, 1]
   }
 }
